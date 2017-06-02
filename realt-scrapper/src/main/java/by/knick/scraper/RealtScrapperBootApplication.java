@@ -16,10 +16,7 @@ public class RealtScrapperBootApplication {
 
     @Bean
     public Action<Chain> home() {
-        return chain -> chain
-                .get(ctx -> ctx
-                        .render("Hello " + service().message())
-                );
+        return chain -> chain.get(ctx -> ctx.render("Hello " + service().message()));
     }
 
     @Bean
