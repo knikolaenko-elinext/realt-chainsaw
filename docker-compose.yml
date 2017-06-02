@@ -1,0 +1,6 @@
+version: '2'
+services:
+  realt-scrapper:
+    build: realt-scrapper/
+    ports:
+     - "5050:5050"
